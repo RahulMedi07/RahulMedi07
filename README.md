@@ -72,7 +72,7 @@ Full-stack attendance management system built on the MERN stack with secure auth
 ML application that predicts Parkinson's Disease from voice recordings using acoustic feature extraction.
 - Real-time audio-quality validation to filter invalid recordings
 - Class-imbalance handling during model training
-- Deployed as an interactive Streamlit app
+- Built as an interactive Streamlit app
 
 **Tech:** Python, Streamlit, scikit-learn (Logistic Regression), Praat (Parselmouth), sounddevice, Pandas, NumPy
 
@@ -96,4 +96,5 @@ ML application that predicts Parkinson's Disease from voice recordings using aco
 
 ## 📫 Connect with me
 
-[LinkedIn](#) • [Email](mailto:rahulmedi33@gmail.com)
+https://www.linkedin.com/in/rahul-medi7/
+• [Email](mailto:rahulmedi33@gmail.com)
