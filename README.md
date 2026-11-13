@@ -1,107 +1,136 @@
-# 🚀 Rahul Medi
+<div align="center">
 
-🎓 B.E. Information Science & Engineering, Acharya Institute of Technology, Bangalore
-📍 Bangalore, Karnataka, India
-📊 CGPA: 8.8
-💡 Full-Stack & AI Engineer building web apps and multi-agent GenAI tools
-🟢 **Open to entry-level Software Engineer / Full-Stack / AI Engineer roles**
+# Hi, I'm Rahul Medi 👋
+
+### Software Engineer | Full-Stack Developer | GenAI
+
+Building reliable full-stack products and multi-agent AI applications.
+Production experience at a global SaaS company (Diligent Corporation).
+
+📍 Bangalore, Karnataka, India &nbsp;|&nbsp; 🎓 B.E. Information Science & Engineering (CGPA 8.8)
+
+![Open to Work](https://img.shields.io/badge/Open%20to-Entry--Level%20Software%20Engineer%20%7C%20Full--Stack%20%7C%20AI%20Engineer-2ea44f?style=for-the-badge)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rahul-medi7/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rahulmedi33@gmail.com)
+
+</div>
 
 ---
 
 ## 👨‍💻 About Me
 
-I'm a full-stack and AI engineer with production experience from internships at a global SaaS company and a full-stack startup. I build across the stack, from React and Node.js frontends and APIs to Python services that use LLMs, RAG and multi-agent workflows to solve real problems.
+I build across the stack, from React and Node.js frontends and APIs to Python services that use LLMs, RAG and multi-agent workflows. I enjoy making software reliable: I have load-tested enterprise APIs at 200 concurrent users, written contract tests that catch breaking changes before release, and built AI pipelines that keep working even when the LLM is down.
 
-🔭 Recently interned as a **Software Development Intern @ Diligent Corporation**, working on an AI-Reporting platform (API reliability, load testing, contract testing)
-🤖 Building **multi-agent AI systems** with LangGraph, FastAPI and RAG
-🎯 Goal: build reliable, production-grade software and deepen my expertise in full-stack + applied AI
-
----
-
-## 💼 Experience
-
-**Software Development Intern, Diligent Corporation** *(Mar 2026 – Sept 2026)*
-Contributed to Diligent's AI-Reporting Platform through feature development and performance testing.
-- Led end-to-end migration of the "My Reports" SPA to Reports Builder, from requirements analysis through AWS CI/CD deployment, in a cross-functional Agile team
-- Resolved recurring MCP (Model Context Protocol) gateway authentication failures (401/404) with JWT token validation and retry-with-backoff logic
-- Designed and ran large-scale load tests (k6 + AWS CloudWatch) at up to 200 virtual users, analyzing P50/P95/P99 latency and throughput
-- Built Pact contract tests across Python and Node.js clients to enforce consumer-provider API compatibility
-- Triaged and fixed production defects through root-cause analysis and multi-region regression testing
-
-**Full Stack Web Development Intern, SuprMentr Technologies Pvt. Ltd** *(Dec 2025 – Mar 2026)*
-- Built Expense Tracker, a full-stack finance app with JWT authentication using the MERN stack
-- Designed a real-time dashboard aggregating income, expenses and balance via MongoDB aggregation pipelines
-- Implemented full CRUD for expenses and categories with a filterable transaction history
+- 🔭 Recently a **Software Development Intern at Diligent Corporation**, on an AI-Reporting platform (API reliability, load testing, contract testing)
+- 🤖 Building **multi-agent AI systems** with LangGraph, FastAPI and RAG
+- 🎯 Looking for an entry-level role where I can grow in full-stack and applied AI
 
 ---
 
-## 🛠️ Technical Skills
+## 🏆 Highlights
 
-**Languages:** C++, Python, JavaScript, TypeScript, SQL
-
-**AI / GenAI:** LLMs, Multi-Agent Systems, LangGraph, LangChain, RAG, Embeddings, Vector Databases (ChromaDB), MCP, Prompt Engineering, Ollama, Gemini API
-
-**ML:** scikit-learn, Pandas, NumPy, Streamlit, Model Evaluation
-
-**Web & APIs:** React.js, Next.js, Node.js, Express.js, FastAPI, REST APIs, WebSocket, JWT, HTML5, CSS3
-
-**Databases:** MongoDB, MySQL, SQLite, ChromaDB
-
-**Cloud & Tools:** AWS, Git, GitHub, CI/CD (GitHub Actions)
-
-**Testing:** Contract Testing (Pact), Load Testing (k6), API Testing, pytest
-
-**Core CS:** Data Structures & Algorithms (C++), Operating Systems, Computer Networks, OOP, DBMS, SDLC
+| | |
+|---|---|
+| ⚡ **200** | concurrent virtual users in k6 load tests on enterprise REST APIs |
+| 🧪 **2,517** | automated pytest tests in CareerPilot AI |
+| 🔌 **26** | REST APIs built for CareerPilot AI |
+| 🏢 **2** | internships (global SaaS company and a full-stack startup) |
 
 ---
 
-## 🚀 Projects
+## 🚀 Featured Projects
 
-### 🧭 CareerPilot AI: Multi-Agent Job Match & Interview Prep
-Full-stack AI career assistant that compares a CV against a job advert and produces a match score, skill-gap analysis, a tailored CV rewrite and interview preparation.
-- LangGraph multi-agent pipeline with conditional routing, served via FastAPI and a Next.js frontend
-- RAG with ChromaDB and sentence-transformer embeddings so every matched skill is traced to the CV line that proves it (no fabricated skills)
-- LLM fallback (Ollama / Gemini to deterministic rules), PBKDF2 password hashing with hashed session tokens, SQLite storage, and 2,500+ pytest tests
+### 🧭 [CareerPilot AI: Multi-Agent Job Match & Interview Prep](https://github.com/RahulMedi07/CareerPilotAI)
+An AI career assistant that compares a CV with a job advert and returns a match score, skill-gap analysis, a tailored CV rewrite and interview preparation.
 
-**Tech:** Python, Next.js, TypeScript, FastAPI, LangGraph, ChromaDB, SQLite
+- 8-node **LangGraph** multi-agent pipeline served through **FastAPI**, with a **Next.js/TypeScript** frontend
+- **RAG** with ChromaDB and sentence-transformer embeddings, so every matched skill traces back to the CV line that proves it
+- Resilient LLM layer (Gemini, Claude, Ollama) with retry-with-exponential-backoff and deterministic fallbacks
+- Secure auth (PBKDF2 hashing, hashed session tokens), SQLite storage, **2,517 pytest tests**
 
-### ☁️ Cloud-Based Attendance System
-Full-stack attendance management system on the MERN stack with secure authentication for students and faculty.
-- Real-time attendance tracking
-- Centralized data management
-- RESTful APIs connecting frontend and backend
+`Python` `FastAPI` `LangGraph` `ChromaDB` `Next.js` `TypeScript` `SQLite`
 
-**Tech:** MongoDB, Express.js, React.js, Node.js, CSS
+### ☁️ [Cloud-Based Attendance System](https://github.com/RahulMedi07/Cloud-Based-Attendence-System)
+A MERN-stack college ERP with role-based access for admins, faculty and students.
 
-### 🧠 Early Detection of Parkinson's Disease Using Voice Data
-ML application that predicts Parkinson's Disease from voice recordings using acoustic feature extraction.
-- Real-time audio-quality validation to filter invalid recordings
-- Class-imbalance handling during model training
-- Interactive Streamlit app with live voice input
+- JWT authentication with bcrypt password hashing
+- Subject-wise attendance tracking with automatic percentage calculation
+- Faculty workflows for marking attendance, creating tests and uploading marks
 
-**Tech:** Python, Streamlit, scikit-learn, Praat (Parselmouth), sounddevice, Pandas, NumPy
+`MongoDB` `Express.js` `React` `Node.js` `Redux`
+
+### 🧠 [Early Detection of Parkinson's Disease Using Voice Data](https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data)
+A Streamlit app that predicts Parkinson's risk from a voice recording.
+
+- Extracts jitter, shimmer and HNR acoustic features with **Praat (Parselmouth)**
+- Logistic Regression pipeline with class-imbalance handling and stratified 5-fold cross-validation
+- Live microphone input or WAV upload
+
+`Python` `scikit-learn` `Streamlit` `Praat` `Pandas` `NumPy`
 
 <details>
-<summary>📂 Other Projects</summary>
+<summary>📂 More projects</summary>
 
-**PDF Chat Assistant (RAG Q&A)** — React app that lets users upload a PDF and ask questions, with client-side chunking, relevance scoring and LangChain + Gemini answers grounded in the document.
-**Tech:** React, LangChain, Google Gemini API, pdfjs-dist, Tailwind CSS
+**PDF Chat Assistant (RAG Q&A):** React app where users upload a PDF and ask questions, using client-side chunking, relevance scoring and LangChain + Gemini answers grounded in the document.
+`React` `LangChain` `Google Gemini API` `pdfjs-dist` `Tailwind CSS`
 
-**Blood Bank Management System** — Responsive web app for donor registration and blood requests with form validations and a donor contact system.
-**Tech:** HTML5, CSS3, JavaScript
+**Blood Bank Management System:** Responsive web app for donor registration and blood requests, with form validation and a donor contact system.
+`HTML5` `CSS3` `JavaScript`
 
 </details>
 
 ---
 
-## 📜 Certifications
+## 💼 Experience
 
-- **Google Cloud Career Launchpad, Cloud Engineer Track** — Google
-- **Cloud Computing** — NPTEL
-- **Artificial Intelligence & Machine Learning** — Coursera
+**Software Development Intern, Diligent Corporation** · Mar 2026 – Sep 2026
+- Led the migration of the "My Reports" SPA to Reports Builder, from requirements analysis to AWS CI/CD deployment
+- Fixed recurring MCP gateway authentication failures (401/404) with JWT validation and retry-with-backoff logic
+- Ran k6 load tests at up to 200 virtual users, analyzing P50/P95/P99 latency with AWS CloudWatch
+- Built Pact consumer-driven contract tests across Python and Node.js clients
+
+**Full Stack Web Development Intern, SuprMentr Technologies** · Dec 2025 – Feb 2026
+- Built a full-stack finance app (React, Node.js, Express, MongoDB) with JWT authentication
+- Designed a dashboard using MongoDB aggregation pipelines
 
 ---
 
-## 📫 Connect with me
+## 🛠️ Tech Stack
 
-[LinkedIn](https://www.linkedin.com/in/rahul-medi7/) • [Email](mailto:rahulmedi33@gmail.com)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+
+| Area | Skills |
+|---|---|
+| **Languages** | C++, Python, JavaScript, TypeScript, SQL |
+| **Web & APIs** | React.js, Next.js, Node.js, Express.js, FastAPI, REST APIs, JWT, WebSocket, HTML5, CSS3 |
+| **AI / GenAI** | LLMs, LangGraph, LangChain, RAG, Multi-Agent Systems, Embeddings, ChromaDB, MCP, Prompt Engineering, Ollama, Gemini API |
+| **ML** | scikit-learn, Pandas, NumPy, Streamlit, Model Evaluation |
+| **Databases** | MongoDB, SQLite, ChromaDB |
+| **Cloud & DevOps** | AWS, AWS CloudWatch, Git, GitHub, CI/CD (GitHub Actions) |
+| **Testing** | Contract Testing (Pact), Load Testing (k6), API Testing, pytest |
+| **Core CS** | Data Structures & Algorithms (C++), OOP, Operating Systems, Computer Networks, DBMS, SDLC |
+
+---
+
+## 📜 Certifications
+Google Cloud Career Launchpad (Cloud Engineer Track) · Cloud Computing (NPTEL) · AI & Machine Learning (Coursera)
+
+---
+
+<div align="center">
+
+### 📫 Let's connect
+Open to entry-level **Software Engineer**, **Full-Stack** and **AI Engineer** roles.
+[LinkedIn](https://www.linkedin.com/in/rahul-medi7/) · [rahulmedi33@gmail.com](mailto:rahulmedi33@gmail.com)
+
+</div>
