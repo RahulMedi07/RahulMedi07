@@ -1,136 +1,116 @@
-<div align="center">
+<h1 align="center">Rahul Medi</h1>
+<p align="center">
+  Software engineer from Bangalore who likes software that still works on a bad day.<br>
+  Full-stack · GenAI · testing &amp; reliability
+</p>
 
-# Hi, I'm Rahul Medi 👋
+```text
+$ pytest rahul_medi/ -v
 
-### Software Engineer | Full-Stack Developer | GenAI
+test_shipped_to_production_at_global_saas ............ PASSED
+test_load_tested_apis_at_200_virtual_users ........... PASSED
+test_contract_tests_catch_breaking_changes ........... PASSED
+test_ai_pipeline_survives_llm_outage ................. PASSED
+test_can_explain_every_line_of_my_resume ............. PASSED
 
-Building reliable full-stack products and multi-agent AI applications.
-Production experience at a global SaaS company (Diligent Corporation).
+5 passed, 0 failed, 1 pending: your_team.py
+```
 
-📍 Bangalore, Karnataka, India &nbsp;|&nbsp; 🎓 B.E. Information Science & Engineering (CGPA 8.8)
-
-![Open to Work](https://img.shields.io/badge/Open%20to-Entry--Level%20Software%20Engineer%20%7C%20Full--Stack%20%7C%20AI%20Engineer-2ea44f?style=for-the-badge)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rahul-medi7/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rahulmedi33@gmail.com)
-
-</div>
-
----
-
-## 👨‍💻 About Me
-
-I build across the stack, from React and Node.js frontends and APIs to Python services that use LLMs, RAG and multi-agent workflows. I enjoy making software reliable: I have load-tested enterprise APIs at 200 concurrent users, written contract tests that catch breaking changes before release, and built AI pipelines that keep working even when the LLM is down.
-
-- 🔭 Recently a **Software Development Intern at Diligent Corporation**, on an AI-Reporting platform (API reliability, load testing, contract testing)
-- 🤖 Building **multi-agent AI systems** with LangGraph, FastAPI and RAG
-- 🎯 Looking for an entry-level role where I can grow in full-stack and applied AI
+<p align="center">
+  <a href="https://www.linkedin.com/in/rahul-medi7/">LinkedIn</a> ·
+  <a href="mailto:rahulmedi33@gmail.com">rahulmedi33@gmail.com</a> ·
+  Bangalore, India · Open to entry-level Software Engineer, Full-Stack and AI Engineer roles
+</p>
 
 ---
 
-## 🏆 Highlights
+## The short version
 
-| | |
-|---|---|
-| ⚡ **200** | concurrent virtual users in k6 load tests on enterprise REST APIs |
-| 🧪 **2,517** | automated pytest tests in CareerPilot AI |
-| 🔌 **26** | REST APIs built for CareerPilot AI |
-| 🏢 **2** | internships (global SaaS company and a full-stack startup) |
+I'm a 2026 B.E. graduate (Information Science & Engineering, CGPA 8.8). I spent six months at **Diligent Corporation**, a global SaaS company, where my work was less about writing new features and more about making sure existing ones didn't fall over. Outside work, I build AI tools that have to be honest about what they know.
+
+I care about three things: **evidence** (an AI answer should point to its source), **resilience** (a system should degrade, not crash), and **proof** (if I say it works, there's a test or a load run behind it).
 
 ---
 
-## 🚀 Featured Projects
+## What I built
 
-### 🧭 [CareerPilot AI: Multi-Agent Job Match & Interview Prep](https://github.com/RahulMedi07/CareerPilotAI)
-An AI career assistant that compares a CV with a job advert and returns a match score, skill-gap analysis, a tailored CV rewrite and interview preparation.
+### CareerPilot AI
+*Paste a CV and a job advert. Get a match score, the skill gaps, a tailored CV rewrite and interview prep.*
 
-- 8-node **LangGraph** multi-agent pipeline served through **FastAPI**, with a **Next.js/TypeScript** frontend
-- **RAG** with ChromaDB and sentence-transformer embeddings, so every matched skill traces back to the CV line that proves it
-- Resilient LLM layer (Gemini, Claude, Ollama) with retry-with-exponential-backoff and deterministic fallbacks
-- Secure auth (PBKDF2 hashing, hashed session tokens), SQLite storage, **2,517 pytest tests**
+**[View the repo →](https://github.com/RahulMedi07/CareerPilotAI)**
+
+```mermaid
+flowchart LR
+    A["CV + job advert"] --> B["Embed CV"]
+    B --> C[("ChromaDB")]
+    C --> D["Match each skill to the CV line that proves it"]
+    D --> E{"LLM available?"}
+    E -- yes --> F["Gemini / Claude / Ollama"]
+    E -- "no, or retries fail" --> G["Deterministic rules"]
+    F --> H["Match score, gaps, CV rewrite, interview prep"]
+    G --> H
+```
+<sub>A simplified view. The real pipeline is an 8-node LangGraph graph served by FastAPI.</sub>
+
+**Decisions I'm happy to defend in an interview**
+- **Every matched skill is traced to a line in the CV** (RAG over ChromaDB). If the CV doesn't prove a skill, the tool doesn't claim it.
+- **The pipeline always finishes.** If the LLM is down, it falls back to deterministic rules, after retrying with exponential backoff.
+- **26 REST APIs and 2,517 pytest tests**, with PBKDF2-hashed passwords and hashed session tokens.
 
 `Python` `FastAPI` `LangGraph` `ChromaDB` `Next.js` `TypeScript` `SQLite`
 
-### ☁️ [Cloud-Based Attendance System](https://github.com/RahulMedi07/Cloud-Based-Attendence-System)
-A MERN-stack college ERP with role-based access for admins, faculty and students.
+### Cloud-Based Attendance System
+A MERN college ERP with separate roles for admins, faculty and students. Faculty mark attendance, create tests and upload marks, and the system calculates each student's attendance percentage by subject. JWT auth, bcrypt hashing.
+**[View the repo →](https://github.com/RahulMedi07/Cloud-Based-Attendence-System)**
 
-- JWT authentication with bcrypt password hashing
-- Subject-wise attendance tracking with automatic percentage calculation
-- Faculty workflows for marking attendance, creating tests and uploading marks
-
-`MongoDB` `Express.js` `React` `Node.js` `Redux`
-
-### 🧠 [Early Detection of Parkinson's Disease Using Voice Data](https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data)
-A Streamlit app that predicts Parkinson's risk from a voice recording.
-
-- Extracts jitter, shimmer and HNR acoustic features with **Praat (Parselmouth)**
-- Logistic Regression pipeline with class-imbalance handling and stratified 5-fold cross-validation
-- Live microphone input or WAV upload
-
-`Python` `scikit-learn` `Streamlit` `Praat` `Pandas` `NumPy`
-
-<details>
-<summary>📂 More projects</summary>
-
-**PDF Chat Assistant (RAG Q&A):** React app where users upload a PDF and ask questions, using client-side chunking, relevance scoring and LangChain + Gemini answers grounded in the document.
-`React` `LangChain` `Google Gemini API` `pdfjs-dist` `Tailwind CSS`
-
-**Blood Bank Management System:** Responsive web app for donor registration and blood requests, with form validation and a donor contact system.
-`HTML5` `CSS3` `JavaScript`
-
-</details>
+### Early Detection of Parkinson's Disease
+A Streamlit app that takes a voice recording (live mic or WAV) and predicts risk from jitter, shimmer and HNR features extracted with Praat. It's a small-data project (195 samples), so I spent my effort on a sound evaluation setup (stratified 5-fold cross-validation, class-imbalance handling) rather than chasing a headline accuracy number.
+**[View the repo →](https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data)**
 
 ---
 
-## 💼 Experience
+## What I actually did at Diligent
 
-**Software Development Intern, Diligent Corporation** · Mar 2026 – Sep 2026
-- Led the migration of the "My Reports" SPA to Reports Builder, from requirements analysis to AWS CI/CD deployment
-- Fixed recurring MCP gateway authentication failures (401/404) with JWT validation and retry-with-backoff logic
-- Ran k6 load tests at up to 200 virtual users, analyzing P50/P95/P99 latency with AWS CloudWatch
-- Built Pact consumer-driven contract tests across Python and Node.js clients
-
-**Full Stack Web Development Intern, SuprMentr Technologies** · Dec 2025 – Feb 2026
-- Built a full-stack finance app (React, Node.js, Express, MongoDB) with JWT authentication
-- Designed a dashboard using MongoDB aggregation pipelines
-
----
-
-## 🛠️ Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-
-| Area | Skills |
+| The problem | What I did |
 |---|---|
-| **Languages** | C++, Python, JavaScript, TypeScript, SQL |
-| **Web & APIs** | React.js, Next.js, Node.js, Express.js, FastAPI, REST APIs, JWT, WebSocket, HTML5, CSS3 |
-| **AI / GenAI** | LLMs, LangGraph, LangChain, RAG, Multi-Agent Systems, Embeddings, ChromaDB, MCP, Prompt Engineering, Ollama, Gemini API |
-| **ML** | scikit-learn, Pandas, NumPy, Streamlit, Model Evaluation |
-| **Databases** | MongoDB, SQLite, ChromaDB |
-| **Cloud & DevOps** | AWS, AWS CloudWatch, Git, GitHub, CI/CD (GitHub Actions) |
-| **Testing** | Contract Testing (Pact), Load Testing (k6), API Testing, pytest |
-| **Core CS** | Data Structures & Algorithms (C++), OOP, Operating Systems, Computer Networks, DBMS, SDLC |
+| An important reporting page was on an older SPA | Led the migration of "My Reports" to Reports Builder, from requirements analysis to AWS CI/CD deployment |
+| The MCP gateway kept failing with 401/404 errors | Added JWT validation and retry-with-exponential-backoff logic |
+| Nobody knew how the APIs behaved under load | Ran k6 load tests at up to 200 virtual users and read P50/P95/P99 latency in AWS CloudWatch |
+| Python and Node.js services could drift apart | Built Pact consumer-driven contract tests so breaking changes fail before release |
+| Production bugs: duplicate API calls, wrong report counts | Root-cause analysis and regression testing |
+
+*Earlier, at SuprMentr Technologies (Dec 2025 – Feb 2026): a full-stack finance app in React, Node.js, Express and MongoDB, with JWT auth and an aggregation-pipeline dashboard.*
 
 ---
 
-## 📜 Certifications
-Google Cloud Career Launchpad (Cloud Engineer Track) · Cloud Computing (NPTEL) · AI & Machine Learning (Coursera)
+## Ask me about
+
+- Why retry logic needs **backoff**, and what happens without it
+- Why **P95 and P99 latency** tell you more than the average
+- What **contract testing** catches that integration tests miss
+- How to make a **RAG system cite its evidence**
+- What an AI app should do **when the model is down**
 
 ---
 
-<div align="center">
+## Toolbox
 
-### 📫 Let's connect
-Open to entry-level **Software Engineer**, **Full-Stack** and **AI Engineer** roles.
-[LinkedIn](https://www.linkedin.com/in/rahul-medi7/) · [rahulmedi33@gmail.com](mailto:rahulmedi33@gmail.com)
+| | |
+|---|---|
+| **Languages** | Python, JavaScript, TypeScript, C++, SQL |
+| **Web** | React, Next.js, Node.js, Express, FastAPI, REST APIs, JWT |
+| **AI** | LangGraph, LangChain, RAG, ChromaDB, embeddings, LLM APIs (Gemini, Claude, Ollama), prompt engineering, MCP |
+| **Data & ML** | MongoDB, SQLite, scikit-learn, Pandas, NumPy |
+| **Quality** | Pact, k6, pytest, API testing |
+| **Cloud** | AWS (CI/CD, CloudWatch), Git, GitHub |
+| **Foundations** | DSA, OOP, operating systems, computer networks, DBMS, SDLC |
 
-</div>
+*Certifications: Google Cloud Career Launchpad (Cloud Engineer Track) · Cloud Computing (NPTEL) · AI & Machine Learning (Coursera)*
+
+---
+
+<p align="center">
+  <b>If your team needs someone who tests before shipping, let's talk.</b><br>
+  <a href="mailto:rahulmedi33@gmail.com">rahulmedi33@gmail.com</a> ·
+  <a href="https://www.linkedin.com/in/rahul-medi7/">LinkedIn</a>
+</p>
