@@ -1,116 +1,115 @@
-<h1 align="center">Rahul Medi</h1>
-<p align="center">
-  Software engineer from Bangalore who likes software that still works on a bad day.<br>
-  Full-stack · GenAI · testing &amp; reliability
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Rahul%20Medi&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineer%20%7C%20Full-Stack%20Developer%20%7C%20GenAI&descSize=20&descAlignY=58" width="100%" alt="Rahul Medi banner"/>
 
-```text
-$ pytest rahul_medi/ -v
+<div align="center">
 
-test_shipped_to_production_at_global_saas ............ PASSED
-test_load_tested_apis_at_200_virtual_users ........... PASSED
-test_contract_tests_catch_breaking_changes ........... PASSED
-test_ai_pipeline_survives_llm_outage ................. PASSED
-test_can_explain_every_line_of_my_resume ............. PASSED
+<a href="https://github.com/RahulMedi07">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1200&color=00C2FF&center=true&vCenter=true&width=760&lines=Building+reliable+full-stack+products;Multi-agent+AI+with+LangGraph+%2B+RAG;Load+tested+APIs+at+200+concurrent+users;Contract+tests+that+catch+breaking+changes" alt="Typing intro"/>
+</a>
 
-5 passed, 0 failed, 1 pending: your_team.py
-```
+<br/>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/rahul-medi7/">LinkedIn</a> ·
-  <a href="mailto:rahulmedi33@gmail.com">rahulmedi33@gmail.com</a> ·
-  Bangalore, India · Open to entry-level Software Engineer, Full-Stack and AI Engineer roles
-</p>
+![Location](https://img.shields.io/badge/📍_Bangalore,_India-203a43?style=for-the-badge)
+![Education](https://img.shields.io/badge/🎓_B.E._ISE_·_CGPA_8.8-2c5364?style=for-the-badge)
+![Open](https://img.shields.io/badge/🟢_Open_to_Entry--Level_SDE_/_Full--Stack_/_AI_roles-2ea44f?style=for-the-badge)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rahul-medi7/)
+[![Gmail](https://img.shields.io/badge/rahulmedi33@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rahulmedi33@gmail.com)
+
+</div>
 
 ---
 
-## The short version
+## 👋 About me
 
-I'm a 2026 B.E. graduate (Information Science & Engineering, CGPA 8.8). I spent six months at **Diligent Corporation**, a global SaaS company, where my work was less about writing new features and more about making sure existing ones didn't fall over. Outside work, I build AI tools that have to be honest about what they know.
+I'm a software engineer who likes software that still works on a bad day. At **Diligent Corporation**, a global SaaS company, I worked on reliability: migrating a production SPA, fixing authentication failures, load testing APIs and writing contract tests. Outside work I build AI tools that have to show their evidence.
 
-I care about three things: **evidence** (an AI answer should point to its source), **resilience** (a system should degrade, not crash), and **proof** (if I say it works, there's a test or a load run behind it).
+<div align="center">
 
----
+| ⚡ 200 | 🧪 2,517 | 🔌 26 | 🏢 2 |
+|:---:|:---:|:---:|:---:|
+| concurrent users in k6 load tests | pytest tests in CareerPilot AI | REST APIs in CareerPilot AI | internships completed |
 
-## What I built
-
-### CareerPilot AI
-*Paste a CV and a job advert. Get a match score, the skill gaps, a tailored CV rewrite and interview prep.*
-
-**[View the repo →](https://github.com/RahulMedi07/CareerPilotAI)**
-
-```mermaid
-flowchart LR
-    A["CV + job advert"] --> B["Embed CV"]
-    B --> C[("ChromaDB")]
-    C --> D["Match each skill to the CV line that proves it"]
-    D --> E{"LLM available?"}
-    E -- yes --> F["Gemini / Claude / Ollama"]
-    E -- "no, or retries fail" --> G["Deterministic rules"]
-    F --> H["Match score, gaps, CV rewrite, interview prep"]
-    G --> H
-```
-<sub>A simplified view. The real pipeline is an 8-node LangGraph graph served by FastAPI.</sub>
-
-**Decisions I'm happy to defend in an interview**
-- **Every matched skill is traced to a line in the CV** (RAG over ChromaDB). If the CV doesn't prove a skill, the tool doesn't claim it.
-- **The pipeline always finishes.** If the LLM is down, it falls back to deterministic rules, after retrying with exponential backoff.
-- **26 REST APIs and 2,517 pytest tests**, with PBKDF2-hashed passwords and hashed session tokens.
-
-`Python` `FastAPI` `LangGraph` `ChromaDB` `Next.js` `TypeScript` `SQLite`
-
-### Cloud-Based Attendance System
-A MERN college ERP with separate roles for admins, faculty and students. Faculty mark attendance, create tests and upload marks, and the system calculates each student's attendance percentage by subject. JWT auth, bcrypt hashing.
-**[View the repo →](https://github.com/RahulMedi07/Cloud-Based-Attendence-System)**
-
-### Early Detection of Parkinson's Disease
-A Streamlit app that takes a voice recording (live mic or WAV) and predicts risk from jitter, shimmer and HNR features extracted with Praat. It's a small-data project (195 samples), so I spent my effort on a sound evaluation setup (stratified 5-fold cross-validation, class-imbalance handling) rather than chasing a headline accuracy number.
-**[View the repo →](https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data)**
+</div>
 
 ---
 
-## What I actually did at Diligent
+## 🚀 Featured projects
 
-| The problem | What I did |
+<div align="center">
+
+<a href="https://github.com/RahulMedi07/CareerPilotAI">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RahulMedi07&repo=CareerPilotAI&theme=tokyonight&hide_border=true" alt="CareerPilot AI"/>
+</a>
+<a href="https://github.com/RahulMedi07/Cloud-Based-Attendence-System">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RahulMedi07&repo=Cloud-Based-Attendence-System&theme=tokyonight&hide_border=true" alt="Attendance System"/>
+</a>
+<a href="https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=RahulMedi07&repo=Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data&theme=tokyonight&hide_border=true" alt="Parkinson's Detection"/>
+</a>
+
+</div>
+
+### 🧭 CareerPilot AI: Multi-Agent Job Match & Interview Prep
+Paste a CV and a job advert, and get a match score, skill gaps, a tailored CV rewrite and interview prep.
+- 🧠 **8-node LangGraph pipeline** served by FastAPI, with a Next.js/TypeScript frontend
+- 🔎 **RAG with ChromaDB**: every matched skill is traced to the CV line that proves it
+- 🛟 **Never fails silently**: Gemini, Claude and Ollama with retry-with-exponential-backoff, then deterministic fallbacks
+- 🔐 **26 REST APIs**, PBKDF2 password hashing, hashed session tokens and **2,517 pytest tests**
+
+### ☁️ Cloud-Based Attendance System
+MERN college ERP with role-based access (admin, faculty, student), JWT and bcrypt, subject-wise attendance with automatic percentages, and faculty tools for tests and marks.
+
+### 🎙️ Early Detection of Parkinson's Disease
+Streamlit app that predicts risk from voice (live mic or WAV) using Praat jitter, shimmer and HNR features. A small dataset (195 samples), evaluated with stratified 5-fold cross-validation and class-imbalance handling.
+
+---
+
+## 💼 Experience
+
+| | |
 |---|---|
-| An important reporting page was on an older SPA | Led the migration of "My Reports" to Reports Builder, from requirements analysis to AWS CI/CD deployment |
-| The MCP gateway kept failing with 401/404 errors | Added JWT validation and retry-with-exponential-backoff logic |
-| Nobody knew how the APIs behaved under load | Ran k6 load tests at up to 200 virtual users and read P50/P95/P99 latency in AWS CloudWatch |
-| Python and Node.js services could drift apart | Built Pact consumer-driven contract tests so breaking changes fail before release |
-| Production bugs: duplicate API calls, wrong report counts | Root-cause analysis and regression testing |
-
-*Earlier, at SuprMentr Technologies (Dec 2025 – Feb 2026): a full-stack finance app in React, Node.js, Express and MongoDB, with JWT auth and an aggregation-pipeline dashboard.*
+| **🏢 Software Development Intern, Diligent Corporation**<br>*Mar 2026 – Sep 2026* | • Led the "My Reports" SPA migration to Reports Builder, through to AWS CI/CD deployment<br>• Fixed MCP gateway 401/404 failures with JWT validation and retry-with-backoff<br>• Ran k6 load tests (up to 200 users), tracking P50/P95/P99 in AWS CloudWatch<br>• Built Pact contract tests across Python and Node.js clients |
+| **💻 Full Stack Web Development Intern, SuprMentr Technologies**<br>*Dec 2025 – Feb 2026* | • Built a React, Node.js, Express and MongoDB finance app with JWT authentication<br>• Designed an aggregation-pipeline dashboard |
 
 ---
 
-## Ask me about
+## 🛠️ Tech stack
 
-- Why retry logic needs **backoff**, and what happens without it
-- Why **P95 and P99 latency** tell you more than the average
-- What **contract testing** catches that integration tests miss
-- How to make a **RAG system cite its evidence**
-- What an AI app should do **when the model is down**
+<div align="center">
 
----
+<img src="https://skillicons.dev/icons?i=py,js,ts,cpp,react,nextjs,nodejs,express,fastapi,mongodb,sqlite,aws,git,github,githubactions,redux,html,css&perline=9" alt="Skills"/>
 
-## Toolbox
+</div>
 
 | | |
 |---|---|
 | **Languages** | Python, JavaScript, TypeScript, C++, SQL |
-| **Web** | React, Next.js, Node.js, Express, FastAPI, REST APIs, JWT |
-| **AI** | LangGraph, LangChain, RAG, ChromaDB, embeddings, LLM APIs (Gemini, Claude, Ollama), prompt engineering, MCP |
+| **Web & APIs** | React, Next.js, Node.js, Express, FastAPI, REST APIs, JWT |
+| **AI / GenAI** | LangGraph, LangChain, RAG, ChromaDB, embeddings, Gemini, Claude, Ollama, MCP, prompt engineering |
 | **Data & ML** | MongoDB, SQLite, scikit-learn, Pandas, NumPy |
 | **Quality** | Pact, k6, pytest, API testing |
 | **Cloud** | AWS (CI/CD, CloudWatch), Git, GitHub |
-| **Foundations** | DSA, OOP, operating systems, computer networks, DBMS, SDLC |
-
-*Certifications: Google Cloud Career Launchpad (Cloud Engineer Track) · Cloud Computing (NPTEL) · AI & Machine Learning (Coursera)*
 
 ---
 
-<p align="center">
-  <b>If your team needs someone who tests before shipping, let's talk.</b><br>
-  <a href="mailto:rahulmedi33@gmail.com">rahulmedi33@gmail.com</a> ·
-  <a href="https://www.linkedin.com/in/rahul-medi7/">LinkedIn</a>
-</p>
+## 📊 GitHub stats
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=RahulMedi07&show_icons=true&theme=tokyonight&hide_border=true" alt="Stats"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RahulMedi07&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages"/>
+
+</div>
+
+---
+
+<div align="center">
+
+### 📫 If your team needs someone who tests before shipping, let's talk.
+
+[![Email me](https://img.shields.io/badge/Email_me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rahulmedi33@gmail.com)
+[![Connect](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rahul-medi7/)
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,100:0f2027&height=100&section=footer" width="100%" alt="footer"/>
