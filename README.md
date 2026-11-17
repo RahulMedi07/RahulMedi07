@@ -1,132 +1,140 @@
- <div align="center">
+<div align="center">
 
-<img src="assets/banner.svg" width="100%" alt="Rahul Medi — Software Engineer"/>
+# Rahul Medi
 
-### SOFTWARE ENGINEER · FULL-STACK · AI ENGINEERING
+### Software Engineer · Full-Stack · GenAI
 
-Building software that works beyond the happy path.
+*I build software that still works on a bad day.*
 
-[Portfolio](https://myportfolio-rahulmedi.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/rahul-medi7/) · [Email](mailto:rahulmedi33@gmail.com) · [GitHub](https://github.com/RahulMedi07)
+<p>
+<img src="https://img.shields.io/badge/OPEN_TO_WORK-entry--level_roles-2ea44f?style=for-the-badge" alt="Open to work, entry-level roles"/>
+<img src="https://img.shields.io/badge/Bangalore-India-203a43?style=for-the-badge" alt="Bangalore, India"/>
+<img src="https://img.shields.io/badge/B.E._ISE-CGPA_8.8-203a43?style=for-the-badge" alt="B.E. ISE, CGPA 8.8"/>
+</p>
 
-**Bengaluru, India · Open to Software Engineering Opportunities**
+<p>
+<a href="https://myportfolio-rahulmedi.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-00c2ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Portfolio"/></a>
+<a href="https://www.linkedin.com/in/rahul-medi7/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="mailto:rahulmedi33@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
 
 </div>
 
 ---
 
-## 01 / The Engineer
+<div align="center">
 
-I'm Rahul, a 2026 Information Science & Engineering graduate (CGPA 8.8).
+| <h2>200</h2> | <h2>2,517</h2> | <h2>26</h2> | <h2>2</h2> |
+|:---:|:---:|:---:|:---:|
+| concurrent users<br>in k6 load tests | pytest tests<br>in CareerPilot AI | REST APIs<br>in CareerPilot AI | internships<br>SaaS + startup |
 
-I enjoy working at the intersection of backend engineering, full-stack development, and AI.
+</div>
 
-At **Diligent Corporation**, I worked on production SaaS systems involving API reliability, authentication, performance testing, and contract testing.
+---
 
-Outside work, I build AI-powered applications with a focus on something I believe matters: **an intelligent system should be able to explain why it produced an answer.**
+## 👋 About
 
-## 02 / Selected Projects
+I'm a 2026 B.E. graduate (Information Science & Engineering). At **Diligent Corporation**, a global SaaS company, my work was less about new features and more about making sure existing ones didn't fall over: migrating a production SPA, fixing authentication failures, load testing APIs and writing contract tests.
 
-### 01. CareerPilot AI
-**Multi-Agent AI · RAG · LangGraph · FastAPI**
+Outside work, I build AI tools that have to show their evidence.
 
-An AI-powered job application assistant that connects resume analysis, job matching, and interview preparation.
+## ✅ My definition of done
 
-- Built an 8-node LangGraph workflow.
-- Uses RAG and ChromaDB for evidence-based skill matching.
-- Connects matched skills to supporting resume content.
-- Supports Gemini, Claude, and Ollama integrations.
-- Includes retry logic and deterministic fallbacks.
+- [x] It has tests
+- [x] It has been load tested (k6, P50 / P95 / P99)
+- [x] It fails gracefully: fallbacks, not crashes
+- [x] Its AI answers point to their source
+- [x] I can explain how every part works
 
-[Explore repository →](https://github.com/RahulMedi07/CareerPilotAI)
+## 🧩 Featured work
 
-<img src="assets/project-careerpilot.svg" width="100%" alt="CareerPilot AI"/>
+### 🧭 [CareerPilot AI](https://github.com/RahulMedi07/CareerPilotAI): multi-agent job match & interview prep
+> Paste a CV and a job advert. Get a match score, skill gaps, a tailored CV rewrite and interview prep.
 
-### 02. Cloud-Based Attendance System
-**MERN Stack · REST APIs · JWT · MongoDB**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6446?style=flat-square)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
-A role-based attendance management application for students, faculty, and administrators.
+- 🔎 **Evidence first:** RAG over ChromaDB traces every matched skill to the CV line that proves it. If the CV doesn't prove it, the tool doesn't claim it.
+- 🛟 **Always finishes:** Gemini, Claude and Ollama calls retry with exponential backoff, then fall back to deterministic rules, so an outage never stops the analysis.
+- 🔐 **26 REST APIs**, an 8-node LangGraph pipeline, PBKDF2 password hashing and **2,517 pytest tests**.
 
-- Implemented authentication and role-based dashboards.
-- Developed REST APIs using Express and Node.js.
-- Integrated MongoDB with Mongoose.
-- Built the frontend using React.
+### ☁️ [Cloud-Based Attendance System](https://github.com/RahulMedi07/Cloud-Based-Attendence-System)
+> A MERN college ERP with separate roles for admins, faculty and students.
 
-[Explore repository →](https://github.com/RahulMedi07/Cloud-Based-Attendence-System)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=flat-square&logo=jsonwebtokens&logoColor=white)
 
-<img src="assets/project-attendance.svg" width="100%" alt="Cloud Attendance System"/>
+- Faculty mark attendance, create tests and upload marks; attendance percentage is calculated per subject
+- JWT authentication with bcrypt password hashing
 
-### 03. Parkinson's Disease Detection
-**Python · Machine Learning · Streamlit · Scikit-learn**
+### 🎙️ [Early Detection of Parkinson's Disease](https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data)
+> A Streamlit app that predicts risk from a voice recording (live mic or WAV).
 
-A machine learning application that predicts Parkinson's disease using voice measurement features.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Praat](https://img.shields.io/badge/Praat-6e40c9?style=flat-square)
 
-- Applied feature selection and correlation analysis.
-- Trained a Logistic Regression model.
-- Built an interactive Streamlit interface.
+- Praat jitter, shimmer and HNR features, with a Logistic Regression pipeline
+- Small dataset (195 samples), so I focused on honest evaluation: stratified 5-fold cross-validation and class-imbalance handling
 
-[Explore repository →](https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data)
+## 💼 Experience
 
-<img src="assets/project-parkinsons.svg" width="100%" alt="Parkinson's Detection"/>
+**🏢 Software Development Intern · Diligent Corporation** `Mar 2026 – Sep 2026`
+- Led the migration of the "My Reports" SPA to Reports Builder, from requirements analysis to AWS CI/CD deployment
+- Fixed recurring MCP gateway 401/404 failures with JWT validation and retry-with-backoff logic
+- Ran k6 load tests on BoardRisk, SP500 and Risk Manager REST APIs at up to 200 virtual users, tracking P50/P95/P99 latency in AWS CloudWatch
+- Built Pact consumer-driven contract tests across Python and Node.js clients so breaking changes fail before release
 
-## 03 / Engineering Experience
+**💻 Full Stack Web Development Intern · SuprMentr Technologies** `Dec 2025 – Feb 2026`
+- Built Expense Tracker, a React, Node.js, Express and MongoDB finance app with JWT authentication and an aggregation-pipeline dashboard
 
-**Software Development Intern — Diligent Corporation**
+## 🛠️ Toolbox
 
-`Mar 2026 – Sep 2026`
-
-- Worked on the migration of the My Reports SPA to Reports Builder, including implementation and AWS CI/CD deployment.
-- Resolved recurring MCP gateway authentication failures involving JWT validation and retry mechanisms.
-- Load tested REST APIs using k6 with up to 200 virtual users.
-- Monitored P50, P95, and P99 latency using AWS CloudWatch.
-- Developed Pact consumer-driven contract tests across Python and Node.js clients.
-
-**Full Stack Web Development Intern — SuprMentr Technologies**
-
-`Dec 2025 – Feb 2026`
-
-- Developed an Expense Tracker using React, Node.js, Express, and MongoDB.
-- Implemented JWT authentication, expense management, and dashboard aggregation.
-
-## 04 / Technical Stack
-
-| Area | Technologies |
+| | |
 |---|---|
-| Languages | C++, Python, JavaScript, TypeScript, SQL |
-| Frontend | React, Next.js |
-| Backend | Node.js, Express, FastAPI |
-| AI / ML | LangGraph, LangChain, RAG, ChromaDB, Gemini |
-| Databases | MongoDB, MySQL |
-| Testing | Pytest, Pact, k6 |
-| Cloud & Tools | AWS, Docker, Git, GitHub |
+| **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square) |
+| **Web & APIs** | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![REST](https://img.shields.io/badge/REST_APIs-0A66C2?style=flat-square) ![JWT](https://img.shields.io/badge/JWT-black?style=flat-square&logo=jsonwebtokens&logoColor=white) |
+| **AI / GenAI** | ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![RAG](https://img.shields.io/badge/RAG-6e40c9?style=flat-square) ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6446?style=flat-square) ![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat-square) ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square) ![Ollama](https://img.shields.io/badge/Ollama-333333?style=flat-square) ![MCP](https://img.shields.io/badge/MCP-0d1117?style=flat-square) |
+| **Data & ML** | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) |
+| **Quality** | ![Pact](https://img.shields.io/badge/Pact-F05032?style=flat-square) ![k6](https://img.shields.io/badge/k6-7D64FF?style=flat-square&logo=k6&logoColor=white) ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white) ![API testing](https://img.shields.io/badge/API_testing-2ea44f?style=flat-square) |
+| **Cloud** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square) ![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=flat-square) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) |
 
-## 05 / How I Approach Engineering
+*Certifications: Google Cloud Career Launchpad (Cloud Engineer Track) · Cloud Computing (NPTEL) · AI & Machine Learning (Coursera)*
 
-I care about more than getting an application to run.
+## 🚧 Next release (in progress)
 
-- **Reliability:** Handle failures instead of assuming everything works.
-- **Performance:** Measure latency instead of guessing.
-- **Testing:** Catch regressions before deployment.
-- **Transparency:** Make AI-generated answers traceable to evidence.
-- **Ownership:** Understand the code I write, not just make it compile.
+- [ ] Dockerize CareerPilot AI and run its pytest suite in GitHub Actions
+- [ ] Deploy CareerPilot AI with a live demo
+- [ ] Build a PostgreSQL-backed project
+- [ ] Daily DSA and system-design practice
 
-## 06 / Currently Exploring
+<details>
+<summary><b>🧠 Ask me about</b></summary>
 
-- Strengthening DSA for Software Engineer interviews.
-- Low-Level Design and system architecture.
-- Docker and CI/CD automation.
-- Building production-ready AI applications.
-- PostgreSQL and scalable backend systems.
+- Why retry logic needs **backoff**, and what happens without it
+- Why **P95 and P99 latency** tell you more than the average
+- What **contract testing** catches that integration tests miss
+- How to make a **RAG system cite its evidence**
+- What an AI app should do **when the model is down**
+
+</details>
 
 ---
 
 <div align="center">
 
-### LET'S BUILD SOMETHING THAT MATTERS.
+### If your team needs someone who tests before shipping, let's talk.
 
-I'm open to entry-level Software Engineer, Backend Engineer, and Full-Stack Developer opportunities.
-
-[Portfolio](https://myportfolio-rahulmedi.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/rahul-medi7/) · [Get in touch](mailto:rahulmedi33@gmail.com)
-
-*Always learning. Always building. Always improving.*
+<a href="mailto:rahulmedi33@gmail.com"><img src="https://img.shields.io/badge/Email_me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me"/></a>
+<a href="https://www.linkedin.com/in/rahul-medi7/"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"/></a>
+<a href="https://myportfolio-rahulmedi.vercel.app/"><img src="https://img.shields.io/badge/View_portfolio-00c2ff?style=for-the-badge&logo=vercel&logoColor=black" alt="View portfolio"/></a>
 
 </div>
