@@ -1,22 +1,22 @@
-```text
-┌──────────────────────────────────────────────────┐
-│ RAHUL MEDI                        > OPEN TO WORK │
-├──────────────────────────────────────────────────┤
-│ role     Software Engineer · Full-Stack · GenAI  │
-│ based    Bangalore, India                        │
-│ shipped  at a global SaaS company                │
-│ proof    2,517 tests · 200 users · 26 APIs       │
-│ degree   B.E. ISE · 2026 · CGPA 8.8              │
-│ looking  entry-level SWE · Full-Stack · AI       │
-│ reach    rahulmedi33@gmail.com                   │
-└──────────────────────────────────────────────────┘
-```
+<div align="center">
 
-**I build software that still works on a bad day.**
+<img src="assets/banner.svg" alt="Rahul Medi: Software Engineer, Full-Stack, GenAI. Open to entry-level roles in Bangalore" width="100%"/>
 
-🌐 [Portfolio](https://myportfolio-rahulmedi.vercel.app/) · 💼 [LinkedIn](https://www.linkedin.com/in/rahul-medi7/) · ✉️ [Email](mailto:rahulmedi33@gmail.com)
+<p>
+<a href="https://myportfolio-rahulmedi.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-00c2ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Portfolio"/></a>
+<a href="https://www.linkedin.com/in/rahul-medi7/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="mailto:rahulmedi33@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
 
----
+<img src="assets/metrics.svg" alt="200 concurrent users in k6 load tests, 2,517 pytest tests, 26 REST APIs, 2 internships" width="100%"/>
+
+</div>
+
+## 👋 About
+
+I'm a 2026 B.E. graduate (Information Science & Engineering, CGPA 8.8). At **Diligent Corporation**, a global SaaS company, my work was less about new features and more about making sure existing ones didn't fall over: migrating a production SPA, fixing authentication failures, load testing APIs and writing contract tests.
+
+Outside work, I build AI tools that have to show their evidence.
 
 ## ✅ My definition of done
 
@@ -26,42 +26,38 @@
 - [x] Its AI answers point to their source
 - [x] I can explain how every part works
 
----
+## 🧩 Featured work
 
-## 🧩 Services I've built
+<p align="center">
+<a href="https://github.com/RahulMedi07/CareerPilotAI"><img src="assets/project-careerpilot.svg" alt="CareerPilot AI: multi-agent job match and interview prep" width="100%"/></a>
+</p>
+<p align="center">
+<a href="https://github.com/RahulMedi07/Cloud-Based-Attendence-System"><img src="assets/project-attendance.svg" alt="Cloud-Based Attendance System: MERN college ERP" width="100%"/></a>
+</p>
+<p align="center">
+<a href="https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data"><img src="assets/project-parkinsons.svg" alt="Early Detection of Parkinson's Disease from voice data" width="100%"/></a>
+</p>
 
-| Service | What it does | Stack | Proof |
-|---|---|---|---|
-| [**CareerPilot AI**](https://github.com/RahulMedi07/CareerPilotAI) | Compares a CV with a job advert and returns a match score, skill gaps, a CV rewrite and interview prep | Python · FastAPI · LangGraph · ChromaDB · Next.js · TypeScript | 2,517 tests · 26 REST APIs |
-| [**Attendance System**](https://github.com/RahulMedi07/Cloud-Based-Attendence-System) | MERN college ERP with separate roles for admins, faculty and students | React · Node.js · Express · MongoDB | JWT + bcrypt · per-subject attendance % |
-| [**Parkinson's Detection**](https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data) | Predicts risk from a voice recording (live mic or WAV) | Python · scikit-learn · Streamlit · Praat | Stratified 5-fold CV on 195 samples |
+**Inside CareerPilot AI:** an 8-node LangGraph pipeline behind FastAPI. RAG over ChromaDB traces every matched skill to the CV line that proves it, and if the CV doesn't prove a skill, the tool doesn't claim it. LLM calls (Gemini, Claude, Ollama) retry with exponential backoff, then fall back to deterministic rules, so an outage never stops the analysis.
 
-### How CareerPilot behaves when the LLM is down
+## 💼 Experience
 
-```text
-LLM call ............... timeout
-retry with backoff ..... timeout
-fallback rules ......... OK
-analysis ............... completed
-```
-<sub>Illustrative. The real pipeline retries with exponential backoff across Gemini, Claude and Ollama, then falls back to deterministic rules, so an outage never stops the analysis.</sub>
+**🏢 Software Development Intern · Diligent Corporation** `Mar 2026 – Sep 2026`
+- Led the migration of the "My Reports" SPA to Reports Builder, from requirements analysis to AWS CI/CD deployment
+- Fixed recurring MCP gateway 401/404 failures with JWT validation and retry-with-backoff logic
+- Ran k6 load tests on BoardRisk, SP500 and Risk Manager REST APIs at up to 200 virtual users, tracking P50/P95/P99 latency in AWS CloudWatch
+- Built Pact consumer-driven contract tests across Python and Node.js clients so breaking changes fail before release
 
-**Evidence first:** every matched skill is traced to a line in the CV through RAG over ChromaDB. If the CV doesn't prove a skill, the tool doesn't claim it.
+**💻 Full Stack Web Development Intern · SuprMentr Technologies** `Dec 2025 – Feb 2026`
+- Built Expense Tracker, a React, Node.js, Express and MongoDB finance app with JWT authentication and an aggregation-pipeline dashboard
 
----
+## 🛠️ Toolbox
 
-## 📦 Release notes
+<p align="center">
+<img src="assets/stack.svg" alt="Toolbox: Python, JavaScript, TypeScript, C++, SQL, React, Next.js, Node.js, FastAPI, LangGraph, LangChain, RAG, ChromaDB, MongoDB, scikit-learn, Pact, k6, pytest, AWS" width="100%"/>
+</p>
 
-### v2026.09 · Diligent Corporation · Mar 2026 – Sep 2026
-**Changed:** led the migration of the "My Reports" SPA to Reports Builder, from requirements analysis to AWS CI/CD deployment
-**Fixed:** recurring MCP gateway 401/404 failures with JWT validation and retry-with-backoff logic
-**Tested:** k6 load tests on BoardRisk, SP500 and Risk Manager REST APIs at up to 200 virtual users, tracking P50/P95/P99 latency in AWS CloudWatch
-**Guarded:** Pact consumer-driven contract tests across Python and Node.js clients, so breaking changes fail before release
-
-### v2025.12 · SuprMentr Technologies · Dec 2025 – Feb 2026
-**Added:** Expense Tracker, a React, Node.js, Express and MongoDB finance app with JWT authentication and an aggregation-pipeline dashboard
-
----
+*Certifications: Google Cloud Career Launchpad (Cloud Engineer Track) · Cloud Computing (NPTEL) · AI & Machine Learning (Coursera)*
 
 ## 🚧 Next release (in progress)
 
@@ -69,8 +65,6 @@ analysis ............... completed
 - [ ] Deploy CareerPilot AI with a live demo
 - [ ] Build a PostgreSQL-backed project
 - [ ] Daily DSA and system-design practice
-
----
 
 <details>
 <summary><b>🧠 Ask me about</b></summary>
@@ -83,28 +77,6 @@ analysis ............... completed
 
 </details>
 
-<details>
-<summary><b>🛠️ Toolbox</b></summary>
-
-| | |
-|---|---|
-| **Languages** | Python, JavaScript, TypeScript, C++, SQL |
-| **Web & APIs** | React, Next.js, Node.js, Express, FastAPI, REST APIs, JWT |
-| **AI / GenAI** | LangGraph, LangChain, RAG, ChromaDB, embeddings, Gemini, Claude, Ollama, MCP, prompt engineering |
-| **Data & ML** | MongoDB, SQLite, scikit-learn, Pandas, NumPy |
-| **Quality** | Pact, k6, pytest, API testing |
-| **Cloud** | AWS (CI/CD, CloudWatch), Git, GitHub, GitHub Actions |
-| **Foundations** | DSA, OOP, operating systems, computer networks, DBMS, SDLC |
-
-*Certifications: Google Cloud Career Launchpad (Cloud Engineer Track) · Cloud Computing (NPTEL) · AI & Machine Learning (Coursera)*
-
-</details>
-
----
-
 <p align="center">
-  <b>If your team needs someone who tests before shipping, let's talk.</b><br>
-  <a href="mailto:rahulmedi33@gmail.com">rahulmedi33@gmail.com</a> ·
-  <a href="https://myportfolio-rahulmedi.vercel.app/">Portfolio</a> ·
-  <a href="https://www.linkedin.com/in/rahul-medi7/">LinkedIn</a>
+<a href="mailto:rahulmedi33@gmail.com"><img src="assets/footer.svg" alt="If your team needs someone who tests before shipping, let's talk. rahulmedi33@gmail.com" width="100%"/></a>
 </p>
