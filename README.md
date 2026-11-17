@@ -1,82 +1,132 @@
-<div align="center">
+ <div align="center">
 
-<img src="assets/banner.svg" alt="Rahul Medi: Software Engineer, Full-Stack, GenAI. Open to entry-level roles in Bangalore" width="100%"/>
+<img src="assets/banner.svg" width="100%" alt="Rahul Medi — Software Engineer"/>
 
-<p>
-<a href="https://myportfolio-rahulmedi.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-00c2ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Portfolio"/></a>
-<a href="https://www.linkedin.com/in/rahul-medi7/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="mailto:rahulmedi33@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-</p>
+### SOFTWARE ENGINEER · FULL-STACK · AI ENGINEERING
 
-<img src="assets/metrics.svg" alt="200 concurrent users in k6 load tests, 2,517 pytest tests, 26 REST APIs, 2 internships" width="100%"/>
+Building software that works beyond the happy path.
+
+[Portfolio](https://myportfolio-rahulmedi.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/rahul-medi7/) · [Email](mailto:rahulmedi33@gmail.com) · [GitHub](https://github.com/RahulMedi07)
+
+**Bengaluru, India · Open to Software Engineering Opportunities**
 
 </div>
 
-## 👋 About
+---
 
-I'm a 2026 B.E. graduate (Information Science & Engineering, CGPA 8.8). At **Diligent Corporation**, a global SaaS company, my work was less about new features and more about making sure existing ones didn't fall over: migrating a production SPA, fixing authentication failures, load testing APIs and writing contract tests.
+## 01 / The Engineer
 
-Outside work, I build AI tools that have to show their evidence.
+I'm Rahul, a 2026 Information Science & Engineering graduate (CGPA 8.8).
 
-## ✅ My definition of done
+I enjoy working at the intersection of backend engineering, full-stack development, and AI.
 
-- [x] It has tests
-- [x] It has been load tested (k6, P50 / P95 / P99)
-- [x] It fails gracefully: fallbacks, not crashes
-- [x] Its AI answers point to their source
-- [x] I can explain how every part works
+At **Diligent Corporation**, I worked on production SaaS systems involving API reliability, authentication, performance testing, and contract testing.
 
-## 🧩 Featured work
+Outside work, I build AI-powered applications with a focus on something I believe matters: **an intelligent system should be able to explain why it produced an answer.**
 
-<p align="center">
-<a href="https://github.com/RahulMedi07/CareerPilotAI"><img src="assets/project-careerpilot.svg" alt="CareerPilot AI: multi-agent job match and interview prep" width="100%"/></a>
-</p>
-<p align="center">
-<a href="https://github.com/RahulMedi07/Cloud-Based-Attendence-System"><img src="assets/project-attendance.svg" alt="Cloud-Based Attendance System: MERN college ERP" width="100%"/></a>
-</p>
-<p align="center">
-<a href="https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data"><img src="assets/project-parkinsons.svg" alt="Early Detection of Parkinson's Disease from voice data" width="100%"/></a>
-</p>
+## 02 / Selected Projects
 
-**Inside CareerPilot AI:** an 8-node LangGraph pipeline behind FastAPI. RAG over ChromaDB traces every matched skill to the CV line that proves it, and if the CV doesn't prove a skill, the tool doesn't claim it. LLM calls (Gemini, Claude, Ollama) retry with exponential backoff, then fall back to deterministic rules, so an outage never stops the analysis.
+### 01. CareerPilot AI
+**Multi-Agent AI · RAG · LangGraph · FastAPI**
 
-## 💼 Experience
+An AI-powered job application assistant that connects resume analysis, job matching, and interview preparation.
 
-**🏢 Software Development Intern · Diligent Corporation** `Mar 2026 – Sep 2026`
-- Led the migration of the "My Reports" SPA to Reports Builder, from requirements analysis to AWS CI/CD deployment
-- Fixed recurring MCP gateway 401/404 failures with JWT validation and retry-with-backoff logic
-- Ran k6 load tests on BoardRisk, SP500 and Risk Manager REST APIs at up to 200 virtual users, tracking P50/P95/P99 latency in AWS CloudWatch
-- Built Pact consumer-driven contract tests across Python and Node.js clients so breaking changes fail before release
+- Built an 8-node LangGraph workflow.
+- Uses RAG and ChromaDB for evidence-based skill matching.
+- Connects matched skills to supporting resume content.
+- Supports Gemini, Claude, and Ollama integrations.
+- Includes retry logic and deterministic fallbacks.
 
-**💻 Full Stack Web Development Intern · SuprMentr Technologies** `Dec 2025 – Feb 2026`
-- Built Expense Tracker, a React, Node.js, Express and MongoDB finance app with JWT authentication and an aggregation-pipeline dashboard
+[Explore repository →](https://github.com/RahulMedi07/CareerPilotAI)
 
-## 🛠️ Toolbox
+<img src="assets/project-careerpilot.svg" width="100%" alt="CareerPilot AI"/>
 
-<p align="center">
-<img src="assets/stack.svg" alt="Toolbox: Python, JavaScript, TypeScript, C++, SQL, React, Next.js, Node.js, FastAPI, LangGraph, LangChain, RAG, ChromaDB, MongoDB, scikit-learn, Pact, k6, pytest, AWS" width="100%"/>
-</p>
+### 02. Cloud-Based Attendance System
+**MERN Stack · REST APIs · JWT · MongoDB**
 
-*Certifications: Google Cloud Career Launchpad (Cloud Engineer Track) · Cloud Computing (NPTEL) · AI & Machine Learning (Coursera)*
+A role-based attendance management application for students, faculty, and administrators.
 
-## 🚧 Next release (in progress)
+- Implemented authentication and role-based dashboards.
+- Developed REST APIs using Express and Node.js.
+- Integrated MongoDB with Mongoose.
+- Built the frontend using React.
 
-- [ ] Dockerize CareerPilot AI and run its pytest suite in GitHub Actions
-- [ ] Deploy CareerPilot AI with a live demo
-- [ ] Build a PostgreSQL-backed project
-- [ ] Daily DSA and system-design practice
+[Explore repository →](https://github.com/RahulMedi07/Cloud-Based-Attendence-System)
 
-<details>
-<summary><b>🧠 Ask me about</b></summary>
+<img src="assets/project-attendance.svg" width="100%" alt="Cloud Attendance System"/>
 
-- Why retry logic needs **backoff**, and what happens without it
-- Why **P95 and P99 latency** tell you more than the average
-- What **contract testing** catches that integration tests miss
-- How to make a **RAG system cite its evidence**
-- What an AI app should do **when the model is down**
+### 03. Parkinson's Disease Detection
+**Python · Machine Learning · Streamlit · Scikit-learn**
 
-</details>
+A machine learning application that predicts Parkinson's disease using voice measurement features.
 
-<p align="center">
-<a href="mailto:rahulmedi33@gmail.com"><img src="assets/footer.svg" alt="If your team needs someone who tests before shipping, let's talk. rahulmedi33@gmail.com" width="100%"/></a>
-</p>
+- Applied feature selection and correlation analysis.
+- Trained a Logistic Regression model.
+- Built an interactive Streamlit interface.
+
+[Explore repository →](https://github.com/RahulMedi07/Early-Detection-Of-Parkinsons-Disease-Using-Voice-Data)
+
+<img src="assets/project-parkinsons.svg" width="100%" alt="Parkinson's Detection"/>
+
+## 03 / Engineering Experience
+
+**Software Development Intern — Diligent Corporation**
+
+`Mar 2026 – Sep 2026`
+
+- Worked on the migration of the My Reports SPA to Reports Builder, including implementation and AWS CI/CD deployment.
+- Resolved recurring MCP gateway authentication failures involving JWT validation and retry mechanisms.
+- Load tested REST APIs using k6 with up to 200 virtual users.
+- Monitored P50, P95, and P99 latency using AWS CloudWatch.
+- Developed Pact consumer-driven contract tests across Python and Node.js clients.
+
+**Full Stack Web Development Intern — SuprMentr Technologies**
+
+`Dec 2025 – Feb 2026`
+
+- Developed an Expense Tracker using React, Node.js, Express, and MongoDB.
+- Implemented JWT authentication, expense management, and dashboard aggregation.
+
+## 04 / Technical Stack
+
+| Area | Technologies |
+|---|---|
+| Languages | C++, Python, JavaScript, TypeScript, SQL |
+| Frontend | React, Next.js |
+| Backend | Node.js, Express, FastAPI |
+| AI / ML | LangGraph, LangChain, RAG, ChromaDB, Gemini |
+| Databases | MongoDB, MySQL |
+| Testing | Pytest, Pact, k6 |
+| Cloud & Tools | AWS, Docker, Git, GitHub |
+
+## 05 / How I Approach Engineering
+
+I care about more than getting an application to run.
+
+- **Reliability:** Handle failures instead of assuming everything works.
+- **Performance:** Measure latency instead of guessing.
+- **Testing:** Catch regressions before deployment.
+- **Transparency:** Make AI-generated answers traceable to evidence.
+- **Ownership:** Understand the code I write, not just make it compile.
+
+## 06 / Currently Exploring
+
+- Strengthening DSA for Software Engineer interviews.
+- Low-Level Design and system architecture.
+- Docker and CI/CD automation.
+- Building production-ready AI applications.
+- PostgreSQL and scalable backend systems.
+
+---
+
+<div align="center">
+
+### LET'S BUILD SOMETHING THAT MATTERS.
+
+I'm open to entry-level Software Engineer, Backend Engineer, and Full-Stack Developer opportunities.
+
+[Portfolio](https://myportfolio-rahulmedi.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/rahul-medi7/) · [Get in touch](mailto:rahulmedi33@gmail.com)
+
+*Always learning. Always building. Always improving.*
+
+</div>
